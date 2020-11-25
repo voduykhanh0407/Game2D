@@ -22,14 +22,14 @@ public class Character2DController : MonoBehaviour
         Vector3 characterScale = transform.localScale;
         if (Input.GetAxisRaw("Horizontal") > 0.5f)
         {
-            characterScale.x = 5;
+            characterScale.x = 6;
             transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * Speed * Time.deltaTime, 0f, 0f));
         }
         else
         {
             if (Input.GetAxisRaw("Horizontal") < -0.5f)
             {
-                characterScale.x = -5;
+                characterScale.x = -6;
                 transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * Speed * Time.deltaTime, 0f, 0f));
             }
         }
